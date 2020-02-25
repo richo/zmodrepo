@@ -4,6 +4,7 @@ use std::env;
 use std::path::PathBuf;
 
 fn main() {
+    println!("cargo:rustc-cdylib-link-arg=-Wl,-undefined,dynamic_lookup");
     let bindings = bindgen::Builder::default()
         .header("wrapper.h")
         .whitelist_type("module")

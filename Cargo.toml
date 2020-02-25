@@ -1,11 +1,11 @@
 [package]
-name = "zrepomod"
+name = "bprompt"
 version = "0.1.0"
 edition = "2018"
 
 [lib]
-name = "repomod"
-crate-type = ["dylib"]
+name = "bprompt"
+crate-type = ["cdylib"]
 
 [dependencies]
 failure = "0.1.6"
